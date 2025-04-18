@@ -8,6 +8,21 @@ export default function Labs() {
   return (
     <div>
       <h1>Labs</h1>
+
+      {/* Full Name */}
+      <p>Dina Barua</p>
+
+      {/* GitHub Repo Link with ID */}
+      <a
+        href="https://github.com/Dbarua21/wd-github"
+        id="wd-github"
+        target="_blank"
+        rel="noreferrer"
+      >
+        GitHub
+      </a>
+
+      {/* Table of Contents and Routes */}
       <TOC />
       <Routes>
         <Route path="/" element={<Navigate to="lab1" />} />
