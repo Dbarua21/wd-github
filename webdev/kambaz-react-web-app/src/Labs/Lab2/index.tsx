@@ -1,3 +1,4 @@
+import ForegroundColors from "./ForegroundColors";
 import "./index.css";
 
 export default function Lab2() {
@@ -15,11 +16,11 @@ export default function Lab2() {
         <h3>ID selectors</h3>
         <p id="wd-id-selector-1">
           Instead of changing the look and feel of all the elements of the same
-          name, e.g., p, we can refer to a specific element by its ID
+          name, e.g., <i>p</i>, we can refer to a specific element by its ID
         </p>
         <p id="wd-id-selector-2">
-          Here's another paragraph using a different ID and a different look and
-          feel
+          Here's another paragraph using a different ID and a different look
+          and feel
         </p>
       </div>
 
@@ -40,8 +41,8 @@ export default function Lab2() {
           <div className="wd-selector-2">
             <p className="wd-selector-3">
               This paragraph’s red background is referenced as <br />
-              .selector-2 .selector-3<br />
-              meaning the descendant of some ancestor.<br />
+              .selector-2 .selector-3 <br />
+              meaning the descendant of some ancestor.
             </p>
             <span className="wd-selector-4">
               whereas this span is a direct child of its parent
@@ -49,6 +50,8 @@ export default function Lab2() {
           </div>
         </div>
       </div>
+
+      <ForegroundColors />
     </div>
   );
 }
