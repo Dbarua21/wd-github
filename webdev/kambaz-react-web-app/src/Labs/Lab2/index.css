@@ -171,3 +171,45 @@
     text-align: center;
   }
   
+  /* === COLOR UTILITY CLASSES === */
+  
+  .wd-bg-color-red {
+    background-color: red;
+  }
+  
+  .wd-bg-color-green {
+    background-color: green;
+  }
+  
+  .wd-bg-color-yellow {
+    background-color: yellow;
+  }
+  
+  .wd-bg-color-blue {
+    background-color: blue;
+  }
+  
+  .wd-bg-color-black {
+    background-color: black;
+  }
+  
+  .wd-fg-color-white {
+    color: white;
+  }
+  
+  .wd-fg-color-black {
+    color: black;
+  }
+  
+  .wd-fg-color-red {
+    color: red;
+  }
+  
+  .wd-fg-color-green {
+    color: green;
+  }
+  
+  .wd-fg-color-blue {
+    color: blue;
+  }
+  
