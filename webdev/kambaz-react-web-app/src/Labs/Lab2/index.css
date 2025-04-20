@@ -18,6 +18,7 @@ p {
     color: blue;
   }
   
+  /* 2.1.5 Document structure selector styles */
   .wd-selector-1 .wd-selector-3 {
     background-color: red;
     color: white;
@@ -28,18 +29,21 @@ p {
     color: blue;
   }
   
+  /* 2.1.7 Foreground color styles */
   .wd-fg-color-black { color: black; }
   .wd-fg-color-white { color: white; }
   .wd-fg-color-blue { color: #0070ff; }
   .wd-fg-color-red { color: #ff7070; }
   .wd-fg-color-green { color: green; }
   
+  /* 2.1.8 Background color styles */
   .wd-bg-color-yellow { background-color: #ffff07; }
   .wd-bg-color-blue { background-color: #7070ff; }
   .wd-bg-color-red { background-color: #ff7070; }
   .wd-bg-color-green { background-color: green; }
   .wd-bg-color-gray { background-color: lightgray; }
   
+  /* 2.1.9 Border styles */
   .wd-border-fat { border-width: 20px 30px 20px 30px; }
   .wd-border-thin { border-width: 4px; }
   .wd-border-solid { border-style: solid; }
@@ -47,3 +51,33 @@ p {
   .wd-border-yellow { border-color: #ffff07; }
   .wd-border-red { border-color: #ff7070; }
   .wd-border-blue { border-color: #7070ff; }
+  
+  /* 2.1.10 Padding styles */
+  .wd-padded-top-left {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+  
+  .wd-padded-bottom-right {
+    padding-bottom: 50px;
+    padding-right: 50px;
+  }
+  
+  .wd-padding-fat {
+    padding: 50px;
+  }
+  
+  /* 2.1.10 Margin styles */
+  .wd-margin-bottom {
+    margin-bottom: 50px;
+  }
+  
+  .wd-margin-right-left {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .wd-margin-all-around {
+    margin: 30px;
+  }
+  
