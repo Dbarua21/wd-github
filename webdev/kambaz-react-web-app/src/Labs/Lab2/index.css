@@ -12,7 +12,6 @@
     padding: 50px;
   }
   
-  /* Margin */
   .wd-margin-bottom {
     margin-bottom: 50px;
   }
@@ -26,32 +25,6 @@
     margin: 30px;
   }
   
-  /* Borders */
-  .wd-border-blue {
-    border-color: blue;
-  }
-  
-  .wd-border-red {
-    border-color: red;
-  }
-  
-  .wd-border-solid {
-    border-style: solid;
-  }
-  
-  .wd-border-dashed {
-    border-style: dashed;
-  }
-  
-  .wd-border-thin {
-    border-width: 1px;
-  }
-  
-  .wd-border-fat {
-    border-width: 5px;
-  }
-  
-  /* Rounded Corners */
   .wd-rounded-corners-top {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -70,7 +43,6 @@
     border-radius: 30px 0px 20px 50px;
   }
   
-  /* Dimensions */
   .wd-dimensions-portrait {
     width: 75px;
     height: 100px;
@@ -86,7 +58,6 @@
     height: 75px;
   }
   
-  /* Relative Positioning */
   .wd-pos-relative-nudge-up-right {
     position: relative;
     bottom: 30px;
@@ -103,7 +74,6 @@
     position: relative;
   }
   
-  /* Absolute Positioning */
   .wd-pos-absolute-10-10 {
     position: absolute;
     top: 10px;
@@ -128,7 +98,6 @@
     bottom: 50%;
   }
   
-  /* Float */
   .wd-float-left {
     float: left;
   }
@@ -142,7 +111,6 @@
     clear: both;
   }
   
-  /* Grid Layout */
   .wd-grid-row {
     clear: both;
   }
@@ -177,7 +145,6 @@
     float: left;
   }
   
-  /* Flex Layout */
   .wd-flex-row-container {
     display: flex;
     flex-direction: row;

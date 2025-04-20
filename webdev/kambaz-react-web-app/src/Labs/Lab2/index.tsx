@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import BackgroundColors from "./BackgroundColors";
 import BootstrapGrids from "./BootstrapGrids";
+import BootstrapLists from "./BootstrapLists";
 import BootstrapTables from "./BootstrapTables";
 import Borders from "./Borders";
 import Corners from "./Corners";
@@ -15,26 +16,28 @@ import Padding from "./Padding";
 import Positions from "./Positions";
 import ReactIconsSampler from "./ReactIcons";
 import ScreenSizeLabel from "./ScreenSizeLabel";
-import Zindex from "./ZIndex";
+import ZIndex from "./ZIndex";
 
 export default function Lab2() {
   return (
     <Container>
-      <ScreenSizeLabel />
       <h2>Lab 2 – Cascading Style Sheets</h2>
 
       <h3>Styling with the STYLE attribute</h3>
       <p style={{ backgroundColor: "green", color: "white" }}>
-        Style attribute allows configuring look and feel right on the element. Although it's very
-        convenient it is considered bad practice and you should avoid using the style attribute
+        Style attribute allows configuring look and feel right on the element.
       </p>
 
       <h3>ID selectors</h3>
       <div id="wd-css-id-selectors">
-        <p id="wd-id-selector-1">
-          Instead of changing the look and feel of all the elements of the same type and tag name,
-          e.g., &lt;i&gt;p&lt;/i&gt;, we can refer to a specific element by its ID.
-        </p>
+        <p id="wd-id-selector-1">Styling based on ID selector 1</p>
+        <p id="wd-id-selector-2">Styling based on ID selector 2</p>
+      </div>
+
+      <h3>Class selectors</h3>
+      <div id="wd-css-class-selectors">
+        <p className="wd-class-selector">Styling based on class selector</p>
+        <p className="wd-class-selector">Styling based on class selector</p>
       </div>
 
       <BackgroundColors />
@@ -45,12 +48,14 @@ export default function Lab2() {
       <Padding />
       <Dimensions />
       <Positions />
-      <Zindex />
+      <ZIndex />
       <Float />
-      <GridLayout />
       <Flex />
+      <GridLayout />
       <BootstrapGrids />
+      <ScreenSizeLabel />
       <BootstrapTables />
+      <BootstrapLists />
       <ReactIconsSampler />
     </Container>
   );
