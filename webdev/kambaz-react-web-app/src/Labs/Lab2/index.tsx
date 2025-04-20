@@ -10,7 +10,10 @@ import Margins from "./Margins";
 import Padding from "./Padding";
 import Positions from "./Positions";
 import ReactIconsSampler from "./ReactIcons";
-import Zindex from "./Zindex";
+import ZIndex from "./ZIndex";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Alert, Button, Card } from "react-bootstrap";
 
 import "./index.css";
 
@@ -33,8 +36,8 @@ export default function Lab2() {
           name, e.g., <i>p</i>, we can refer to a specific element by its ID
         </p>
         <p id="wd-id-selector-2">
-          Here's another paragraph using a different ID and a different look and
-          feel
+          Here's another paragraph using a different ID and a different look
+          and feel
         </p>
       </div>
 
@@ -54,14 +57,18 @@ export default function Lab2() {
         <div className="wd-selector-1">
           <h3>Document structure selectors</h3>
           <div className="wd-selector-2">
-            <p className="wd-selector-3">
-              This paragraph's red background is referenced as <br />
-              .selector-2 .selector-3<br />
-              meaning the descendant of some ancestor.<br />
+            <div className="wd-selector-3">
+              <p>
+                This paragraph's red background is referenced as
+                <br />
+                .selector-2 .selector-3
+                <br />
+                meaning the descendant of some ancestor.
+              </p>
               <span className="wd-selector-4">
                 whereas this span is a direct child of its parent
               </span>
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -69,16 +76,34 @@ export default function Lab2() {
       <ForegroundColors />
       <BackgroundColors />
       <Borders />
+      <Corners />
       <Padding />
       <Margins />
-      <Corners />
       <Dimensions />
       <Positions />
-      <Zindex />
+      <ZIndex />
       <Float />
       <GridLayout />
       <Flex />
       <ReactIconsSampler />
+
+      <div className="mt-5">
+        <h2>React Bootstrap Demo</h2>
+
+        <Alert variant="info">This is a Bootstrap alert — styled by Bootstrap!</Alert>
+
+        <Button variant="primary">Bootstrap Button</Button>
+
+        <Card className="mt-3" style={{ width: "18rem" }}>
+          <Card.Body>
+            <Card.Title>Bootstrap Card</Card.Title>
+            <Card.Text>
+              This is a simple card using React Bootstrap.
+            </Card.Text>
+            <Button variant="success">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </div>
     </div>
   );
 }
