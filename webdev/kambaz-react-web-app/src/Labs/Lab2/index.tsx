@@ -1,5 +1,6 @@
 import BackgroundColors from "./BackgroundColors";
 import Borders from "./Borders";
+import Corners from "./Corners";
 import ForegroundColors from "./ForegroundColors";
 import "./index.css";
 import Margins from "./Margins";
@@ -17,30 +18,33 @@ export default function Lab2() {
         should avoid using the style attribute
       </p>
 
+      <h3>ID selectors</h3>
       <div id="wd-css-id-selectors">
-        <h3>ID selectors</h3>
         <p id="wd-id-selector-1">
           Instead of changing the look and feel of all the elements of the same
-          name, e.g., <em>p</em>, we can refer to a specific element by its ID
+          name, e.g., <i>p</i>, we can refer to a specific element by its ID
         </p>
         <p id="wd-id-selector-2">
-          Here's another paragraph using a different ID and a different look and feel
+          Here's another paragraph using a different ID and a different look and
+          feel
         </p>
       </div>
 
+      <h3>Class selectors</h3>
       <div id="wd-css-class-selectors">
-        <h3>Class selectors</h3>
         <p className="wd-class-selector">
-          Instead of using IDs to refer to elements, you can use an element's CLASS attribute
+          Instead of using IDs to refer to elements, you can use an element's
+          CLASS attribute
         </p>
         <h4 className="wd-class-selector">
           This heading has same style as paragraph above
         </h4>
       </div>
 
+      <h3>Document structure selectors</h3>
       <div id="wd-css-document-structure">
-        <h3>Document structure selectors</h3>
         <div className="wd-selector-1">
+          <h3>Document structure selectors</h3>
           <div className="wd-selector-2">
             <p className="wd-selector-3">
               This paragraph's red background is referenced as <br />
@@ -59,6 +63,7 @@ export default function Lab2() {
       <Borders />
       <Padding />
       <Margins />
+      <Corners />
     </div>
   );
 }
