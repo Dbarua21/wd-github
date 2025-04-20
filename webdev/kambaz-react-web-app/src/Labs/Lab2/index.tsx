@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import BackgroundColors from "./BackgroundColors";
+import BootstrapForms from "./BootstrapForms";
 import BootstrapGrids from "./BootstrapGrids";
 import BootstrapLists from "./BootstrapLists";
 import BootstrapTables from "./BootstrapTables";
@@ -57,6 +58,7 @@ export default function Lab2() {
       <BootstrapTables />
       <BootstrapLists />
       <ReactIconsSampler />
+      <BootstrapForms />
     </Container>
   );
 }
