@@ -3,6 +3,7 @@ import BackgroundColors from "./BackgroundColors";
 import BootstrapForms from "./BootstrapForms";
 import BootstrapGrids from "./BootstrapGrids";
 import BootstrapLists from "./BootstrapLists";
+import BootstrapNavigation from "./BootstrapNavigation";
 import BootstrapTables from "./BootstrapTables";
 import Borders from "./Borders";
 import Corners from "./Corners";
@@ -57,8 +58,9 @@ export default function Lab2() {
       <ScreenSizeLabel />
       <BootstrapTables />
       <BootstrapLists />
-      <ReactIconsSampler />
+      <BootstrapNavigation />
       <BootstrapForms />
+      <ReactIconsSampler />
     </Container>
   );
 }
