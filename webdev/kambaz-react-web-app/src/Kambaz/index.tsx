@@ -4,17 +4,13 @@ import Courses from "./Courses";
 import AssignmentEditor from "./Courses/Assignments/Editor";
 import Dashboard from "./Dashboard";
 import KambazNavigation from "./Navigation";
+import "./styles.css";
 
 export default function Kambaz() {
   return (
-    <div id="wd-kambaz" className="d-flex">
-      {/* Sidebar */}
-      <div className="d-none d-md-block">
-        <KambazNavigation />
-      </div>
-
-      {/* Main Content */}
-      <div className="flex-fill">
+    <div id="wd-kambaz">
+      <KambazNavigation />
+      <div className="wd-main-content-offset p-3">
         <Routes>
           <Route path="/" element={<Navigate to="/Kambaz/Account" />} />
           <Route path="/Account/*" element={<Account />} />
