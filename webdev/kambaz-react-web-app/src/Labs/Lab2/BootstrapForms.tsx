@@ -1,4 +1,5 @@
 import {
+    Button,
     Col,
     Form,
     FormControl,
@@ -9,7 +10,7 @@ import {
     Row,
 } from "react-bootstrap";
 import FormRange from "react-bootstrap/FormRange";
-  
+
   export default function BootstrapForms() {
     return (
       <>
