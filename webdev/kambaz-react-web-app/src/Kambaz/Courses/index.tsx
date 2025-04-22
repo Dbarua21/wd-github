@@ -4,6 +4,7 @@ import AssignmentEditor from "./Assignments/Editor";
 import Home from "./Home";
 import Modules from "./Modules";
 import CourseNavigation from "./Navigation";
+import PeopleTable from "./People/Table";
 
 export default function Courses() {
   return (
@@ -24,6 +25,7 @@ export default function Courses() {
             <Route path="Modules" element={<Modules />} />
             <Route path="Assignments" element={<Assignments />} />
             <Route path="Assignments/:aid" element={<AssignmentEditor />} />
+            <Route path="People" element={<PeopleTable />} />
           </Routes>
         </div>
       </div>
