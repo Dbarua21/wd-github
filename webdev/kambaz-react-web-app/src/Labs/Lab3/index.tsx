@@ -20,4 +20,3 @@ export default function Lab3() {
       <ConditionalOutputInline />
     </div>
   );
-}
