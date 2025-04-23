@@ -1,10 +1,10 @@
-import BooleanVariables from "./BooleanVariables.tsx";
-import ConditionalOutputIfElse from "./ConditionalOutputIfElse.tsx";
-import ConditionalOutputInline from "./ConditionalOutputInline.tsx";
-import IfElse from "./IfElse.tsx";
-import TernaryOperator from "./TernaryOperator.tsx";
-import VariablesAndConstants from "./VariablesAndConstants.tsx";
-import VariableTypes from "./VariableTypes.tsx";
+import BooleanVariables from "./BooleanVariables";
+import ConditionalOutputIfElse from "./ConditionalOutputIfElse";
+import ConditionalOutputInline from "./ConditionalOutputInline";
+import IfElse from "./IfElse";
+import TernaryOperator from "./TernaryOperator";
+import VariablesAndConstants from "./VariablesAndConstants";
+import VariableTypes from "./VariableTypes";
 
 export default function Lab3() {
   return (
