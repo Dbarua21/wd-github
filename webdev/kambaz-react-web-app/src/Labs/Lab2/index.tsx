@@ -12,13 +12,13 @@ import Flex from "./Flex";
 import Float from "./Float";
 import ForegroundColors from "./ForegroundColors";
 import GridLayout from "./GridLayout";
-import "./index.css";
 import Margins from "./Margins";
 import Padding from "./Padding";
 import Positions from "./Positions";
 import ReactIconsSampler from "./ReactIcons";
 import ScreenSizeLabel from "./ScreenSizeLabel";
 import ZIndex from "./ZIndex";
+import "./index.css";
 
 export default function Lab2() {
   return (
@@ -54,6 +54,7 @@ export default function Lab2() {
       <Float />
       <Flex />
       <GridLayout />
+
       <BootstrapGrids />
       <ScreenSizeLabel />
       <BootstrapTables />
