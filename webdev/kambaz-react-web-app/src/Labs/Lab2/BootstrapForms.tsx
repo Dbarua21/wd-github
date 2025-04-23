@@ -163,4 +163,3 @@ import FormRange from "react-bootstrap/FormRange";
       </>
     );
   }
-  
