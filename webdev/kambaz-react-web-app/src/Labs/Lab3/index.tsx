@@ -18,7 +18,7 @@ import SimpleArrays from "./SimpleArrays";
 import Spreading from "./Spreading";
 import TemplateLiterals from "./TemplateLiterals";
 import TernaryOperator from "./TernaryOperator";
-import TodoList from "./todos/TodoList";
+import TodoList from "./TodoList";
 import VariablesAndConstants from "./VariablesAndConstants";
 import VariableTypes from "./VariableTypes";
 
