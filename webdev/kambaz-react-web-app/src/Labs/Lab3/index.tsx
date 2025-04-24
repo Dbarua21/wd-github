@@ -15,8 +15,10 @@ import JsonStringify from "./JsonStringify";
 import LegacyFunctions from "./LegacyFunctions";
 import MapFunction from "./MapFunction";
 import SimpleArrays from "./SimpleArrays";
+import Spreading from "./Spreading";
 import TemplateLiterals from "./TemplateLiterals";
 import TernaryOperator from "./TernaryOperator";
+import TodoList from "./todos/TodoList";
 import VariablesAndConstants from "./VariablesAndConstants";
 import VariableTypes from "./VariableTypes";
 
@@ -45,6 +47,8 @@ export default function Lab3() {
       <FilterFunction />
       <JsonStringify />
       <House />
+      <TodoList />
+      <Spreading />
     </div>
   );
 }
