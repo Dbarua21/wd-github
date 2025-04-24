@@ -1,28 +1,34 @@
-import { Navigate, Route, Routes } from "react-router";
-import Account from "./Account";
-import Courses from "./Courses";
-import AssignmentEditor from "./Courses/Assignments/Editor";
-import Dashboard from "./Dashboard";
-import KambazNavigation from "./Navigation";
-import "./styles.css";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Assignments from "./Assignments/AssignmentsPage";
+import AssignmentEditor from "./Assignments/Editor";
+import Home from "./Home";
+import Modules from "./Modules";
+import CourseNavigation from "./Navigation";
+import PeopleTable from "./People/Table";
 
-export default function Kambaz() {
+export default function Courses() {
   return (
-    <div id="wd-kambaz" className="d-flex">
-      <KambazNavigation />
-      <div className="wd-main-content-offset p-3">
-        <Routes>
-          <Route path="/" element={<Navigate to="/Kambaz/Dashboard" />} />
-          <Route path="/Account/*" element={<Account />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/Courses/:cid/*" element={<Courses />} />
-          <Route path="/Calendar" element={<h1>Calendar</h1>} />
-          <Route path="/Inbox" element={<h1>Inbox</h1>} />
-          <Route path="/Labs" element={<h1>Labs</h1>} />
-          <Route path=":courseId/Assignments/:aid" element={<AssignmentEditor />} />
-        </Routes>
+    <div id="wd-courses">
+      <h2>Course 1234</h2>
+      <hr />
+      <div className="d-flex">
+        {/* Sidebar */}
+        <div className="d-none d-md-block">
+          <CourseNavigation />
+        </div>
+
+        {/* Main content */}
+        <div className="flex-fill">
+          <Routes>
+            <Route index element={<Navigate to="Home" replace />} />
+            <Route path="Home" element={<Home />} />
+            <Route path="Modules" element={<Modules />} />
+            <Route path="Assignments" element={<Assignments />} />
+            <Route path="Assignments/:aid" element={<AssignmentEditor />} />
+            <Route path="People" element={<PeopleTable />} />
+          </Routes>
+        </div>
       </div>
     </div>
   );
 }
-
