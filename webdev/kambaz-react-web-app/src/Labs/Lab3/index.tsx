@@ -13,14 +13,17 @@ import FindFunction from "./FindFunction";
 import FindIndex from "./FindIndex";
 import ForLoops from "./ForLoops";
 import FunctionDestructing from "./FunctionDestructing";
+import Highlight from "./Highlight";
 import House from "./House";
 import IfElse from "./IfElse";
 import ImpliedReturn from "./ImpliedReturn";
 import JsonStringify from "./JsonStringify";
 import LegacyFunctions from "./LegacyFunctions";
 import MapFunction from "./MapFunction";
+import PathParameters from "./PathParameters";
 import SimpleArrays from "./SimpleArrays";
 import Spreading from "./Spreading";
+import Square from "./Square";
 import Styles from "./Styles";
 import TemplateLiterals from "./TemplateLiterals";
 import TernaryOperator from "./TernaryOperator";
@@ -60,7 +63,16 @@ export default function Lab3() {
       <DestructingImports />
       <Classes />
       <Styles />
+      <h4>Square of 4</h4>
+      <Square>4</Square>
+      <hr />
+      <Highlight>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione
+        eaque illo minus cum, saepe totam vel nihil repellat nemo explicabo
+        excepturi consectetur.
+      </Highlight>
       <Add a={3} b={4} />
+      <PathParameters />
     </div>
   );
 }
