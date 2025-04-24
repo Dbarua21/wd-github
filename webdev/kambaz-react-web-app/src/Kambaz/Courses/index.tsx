@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Assignments from "./Assignments/AssignmentsPage";
 import AssignmentEditor from "./Assignments/Editor";
-import Home from "./Home";
-import Modules from "./Modules";
+import Home from "./Home/index";
+import Modules from "./Modules/index";
 import CourseNavigation from "./Navigation";
 import PeopleTable from "./People/Table";
 
