@@ -8,7 +8,7 @@ import "./styles.css";
 
 export default function Kambaz() {
   return (
-    <div id="wd-kambaz">
+    <div id="wd-kambaz" className="d-flex">
       <KambazNavigation />
       <div className="wd-main-content-offset p-3">
         <Routes>
@@ -25,3 +25,4 @@ export default function Kambaz() {
     </div>
   );
 }
+
