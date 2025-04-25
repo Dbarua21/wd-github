@@ -1,0 +1,5 @@
+[
+    { "_id": "123", "firstName": "Elena", "lastName": "Stone", "role": "Student", "section": "01", "loginId": "elena123", "lastActivity": "2 days ago", "totalActivity": "15h" },
+    { "_id": "234", "firstName": "Tom", "lastName": "Riddle", "role": "TA", "section": "01", "loginId": "tomta", "lastActivity": "1 day ago", "totalActivity": "8h" },
+    { "_id": "345", "firstName": "Sara", "lastName": "Moon", "role": "Student", "section": "02", "loginId": "sarabio", "lastActivity": "5h ago", "totalActivity": "12h" }
+  ]
