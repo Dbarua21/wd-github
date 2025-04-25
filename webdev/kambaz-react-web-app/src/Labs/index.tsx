@@ -3,25 +3,23 @@ import Lab1 from "./Lab1";
 import Lab2 from "./Lab2";
 import Lab3 from "./Lab3";
 import Lab4 from "./Lab4";
-import TOC from "./TOC";
-
-// Lab 4 Components
 import BooleanStateVariables from "./Lab4/BooleanStateVariables";
 import ClickEvent from "./Lab4/ClickEvent";
 import Counter from "./Lab4/Counter";
 import EventObject from "./Lab4/EventObject";
 import PassingDataOnEvent from "./Lab4/PassingDataOnEvent";
 import PassingFunctions from "./Lab4/PassingFunctions";
+import TOC from "./TOC";
 
 export default function Labs() {
+  const sayHello = () => {
+    alert("Hello");
+  };
+
   return (
     <div>
       <h1>Labs</h1>
-
-      {/* Full Name */}
       <p>Dina Barua</p>
-
-      {/* GitHub Repo Link with ID */}
       <a
         href="https://github.com/Dbarua21/wd-github"
         id="wd-github"
@@ -31,7 +29,6 @@ export default function Labs() {
         GitHub
       </a>
 
-      {/* Table of Contents */}
       <TOC />
 
       {/* Lab 4 Navigation Links */}
@@ -54,7 +51,7 @@ export default function Labs() {
         <Route path="Lab4" element={<Lab4 />} />
         <Route path="Lab4/ClickEvent" element={<ClickEvent />} />
         <Route path="Lab4/PassingDataOnEvent" element={<PassingDataOnEvent />} />
-        <Route path="Lab4/PassingFunctions" element={<PassingFunctions />} />
+        <Route path="Lab4/PassingFunctions" element={<PassingFunctions theFunction={sayHello} />} />
         <Route path="Lab4/EventObject" element={<EventObject />} />
         <Route path="Lab4/Counter" element={<Counter />} />
         <Route path="Lab4/BooleanStateVariables" element={<BooleanStateVariables />} />
