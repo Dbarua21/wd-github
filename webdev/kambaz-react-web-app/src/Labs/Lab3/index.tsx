@@ -1,3 +1,5 @@
+import { ListGroup } from "react-bootstrap";
+import { useSelector } from "react-redux";
 import Add from "./Add";
 import AddingAndRemovingToFromArrays from "./AddingAndRemovingToFromArrays";
 import ArrayIndexAndLength from "./ArrayIndexAndLength";
@@ -33,6 +35,7 @@ import VariableTypes from "./VariableTypes";
 
 export default function Lab3() {
   console.log("Hello World!");
+  const { todos } = useSelector((state: any) => state.todosReducer);
 
   return (
     <div id="wd-lab3" className="container">
@@ -75,6 +78,13 @@ export default function Lab3() {
       </Highlight>
       <Add a={3} b={4} />
       <PathParameters />
+
+      <h4>Todos from Redux</h4>
+      <ListGroup>
+        {todos.map((todo: any) => (
+          <ListGroup.Item key={todo.id}>{todo.title}</ListGroup.Item>
+        ))}
+      </ListGroup>
     </div>
   );
 }
