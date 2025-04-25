@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import Kambaz from "./Kambaz";
 import Labs from "./Labs";
