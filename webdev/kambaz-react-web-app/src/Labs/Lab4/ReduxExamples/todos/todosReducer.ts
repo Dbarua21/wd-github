@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   todos: [
     { id: "1", title: "Learn React" },
-    { id: "2", title: "Learn Node" }
+    { id: "2", title: "Learn Node" },
   ],
   todo: { title: "Learn Mongo" },
 };
@@ -33,7 +33,7 @@ const todosSlice = createSlice({
     },
     setTodo: (state, action) => {
       state.todo = action.payload;
-    }
+    },
   },
 });
 

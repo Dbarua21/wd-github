@@ -8,8 +8,18 @@ export default function TodoForm() {
 
   return (
     <ListGroup.Item>
-      <Button onClick={() => dispatch(addTodo(todo))} id="wd-add-todo-click"> Add </Button>
-      <Button onClick={() => dispatch(updateTodo(todo))} id="wd-update-todo-click"> Update </Button>
+      <Button
+        onClick={() => dispatch(addTodo(todo))}
+        id="wd-add-todo-click"
+      >
+        Add
+      </Button>
+      <Button
+        onClick={() => dispatch(updateTodo(todo))}
+        id="wd-update-todo-click"
+      >
+        Update
+      </Button>
       <FormControl
         defaultValue={todo.title}
         onChange={(e) =>

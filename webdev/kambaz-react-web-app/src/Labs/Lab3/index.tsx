@@ -79,6 +79,7 @@ export default function Lab3() {
       <Add a={3} b={4} />
       <PathParameters />
 
+      {/* Redux todos below */}
       <h4>Todos from Redux</h4>
       <ListGroup>
         {todos.map((todo: any) => (
