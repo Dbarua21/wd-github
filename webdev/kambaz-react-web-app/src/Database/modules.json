@@ -1,0 +1,6 @@
+[
+    { "_id": "M1", "name": "Basics of Rocket Propulsion", "course": "RS101" },
+    { "_id": "M2", "name": "Fuel Chemistry", "course": "RS101" },
+    { "_id": "M3", "name": "Introduction to Aerodynamics", "course": "RS102" },
+    { "_id": "M4", "name": "Organic Structures", "course": "RS104" }
+  ]

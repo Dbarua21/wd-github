@@ -1,0 +1,10 @@
+[
+    { "_id": "A1", "title": "Rocket Engine Report", "course": "RS101", "points": 100, "due": "2024-05-13T23:59", "available": "2024-05-06T00:00" },
+    { "_id": "A2", "title": "Propulsion Chemistry Lab", "course": "RS101", "points": 100, "due": "2024-05-20T23:59", "available": "2024-05-13T00:00" },
+    { "_id": "A3", "title": "Rocket Final Project", "course": "RS101", "points": 100, "due": "2024-05-27T23:59", "available": "2024-05-20T00:00" },
+  
+    { "_id": "B1", "title": "Aerodynamic Forces Essay", "course": "RS102", "points": 100, "due": "2024-05-13T23:59", "available": "2024-05-06T00:00" },
+    { "_id": "B2", "title": "Airfoil Design Exercise", "course": "RS102", "points": 100, "due": "2024-05-20T23:59", "available": "2024-05-13T00:00" },
+  
+    { "_id": "C1", "title": "Organic Reactions Worksheet", "course": "RS104", "points": 100, "due": "2024-05-13T23:59", "available": "2024-05-06T00:00" }
+  ]

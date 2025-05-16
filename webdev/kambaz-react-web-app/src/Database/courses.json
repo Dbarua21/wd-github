@@ -1,0 +1,45 @@
+[
+    {
+      "_id": "5100",
+      "name": "CS5100 Foundations of AI",
+      "description": "Intro to Intelligent Systems",
+      "image": "/images/ai-foundations.jpg"
+    },
+    {
+      "_id": "WebDev",
+      "name": "CS5610 Web Development",
+      "description": "Frontend & Backend Engineering",
+      "image": "/images/web-dev.jpg"
+    },
+    {
+      "_id": "iOS",
+      "name": "CS5520 Mobile/iOS Dev",
+      "description": "Swift & Mobile App Projects",
+      "image": "/images/ios-dev.jpg"
+    },
+    {
+      "_id": "OOP",
+      "name": "CS5004 Object-Oriented Programming",
+      "description": "Abstraction, Inheritance & Design",
+      "image": "/images/oop.jpg"
+    },
+    {
+      "_id": "Algos",
+      "name": "CS5008 Data Structures & Algorithms",
+      "description": "Problem Solving & Optimization",
+      "image": "/images/algos.jpg"
+    },
+    {
+      "_id": "5002",
+      "name": "CS5002 Discrete Math",
+      "description": "Logic, Sets & Proofs",
+      "image": "/images/discrete-math.jpg"
+    },
+    {
+      "_id": "Coop",
+      "name": "Career Prep & Co-op",
+      "description": "Resume • Interviews • Internships",
+      "image": "/images/career.jpg"
+    }
+  ]
+  

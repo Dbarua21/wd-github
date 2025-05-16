@@ -1,0 +1,29 @@
+{
+    "posts": [
+      {
+        "_id": "1",
+        "title": "Clarification on HW1",
+        "summary": "Confused about where to place the submit button",
+        "folder": "hw1",
+        "views": 14,
+        "author": "John Doe",
+        "details": "Where exactly should I place the buttons in HW1?"
+      },
+      {
+        "_id": "2",
+        "title": "Exam format question",
+        "summary": "Wondering if we can use notes for the final exam",
+        "folder": "exam",
+        "views": 9,
+        "author": "Jane Smith",
+        "details": "Are we allowed to use printed notes for the final exam?"
+      }
+    ],
+    "folders": ["hw1", "hw2", "project", "exam", "logistics"],
+    "currentUser": {
+      "_id": "instructor123",
+      "name": "Jose Annunziato",
+      "role": "instructor"
+    }
+  }
+  

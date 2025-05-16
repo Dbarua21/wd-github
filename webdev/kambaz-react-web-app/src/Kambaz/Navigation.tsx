@@ -3,9 +3,12 @@ import { AiOutlineDashboard } from "react-icons/ai";
 import { FaFlask, FaInbox, FaRegCircleUser } from "react-icons/fa6";
 import { IoCalendarOutline } from "react-icons/io5";
 import { LiaBookSolid } from "react-icons/lia";
-import { Link } from "react-router-dom";
+import { PiChatsTeardropLight } from "react-icons/pi"; // New icon for Pazza
+import { Link, useParams } from "react-router-dom";
 
 export default function KambazNavigation() {
+  const { cid } = useParams();
+
   return (
     <ListGroup
       id="wd-kambaz-navigation"
@@ -55,6 +58,19 @@ export default function KambazNavigation() {
         <br />
         Courses
       </ListGroup.Item>
+
+      {/* Pazza Link - Conditional on course */}
+      {cid && (
+        <ListGroup.Item
+          as={Link}
+          to={`/Kambaz/Courses/${cid}/Pazza`}
+          className="text-center border-0 bg-black text-white"
+        >
+          <PiChatsTeardropLight className="fs-1 text-danger" />
+          <br />
+          Pazza
+        </ListGroup.Item>
+      )}
 
       {/* Calendar Link */}
       <ListGroup.Item

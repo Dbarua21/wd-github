@@ -7,6 +7,8 @@ import Courses from "./Courses";
 import AssignmentEditor from "./Courses/Assignments/Editor";
 import Dashboard from "./Dashboard";
 import KambazNavigation from "./Navigation";
+import Pazza from "./Pazza";
+
 import "./styles.css";
 
 export default function Kambaz() {
@@ -59,6 +61,9 @@ export default function Kambaz() {
             path="Courses/:cid/*"
             element={<Courses courses={courses} />}
           />
+          {/* ✅ New Pazza Tab under Course */}
+          <Route path="Courses/:cid/Pazza/*" element={<Pazza />} />
+
           <Route path="Calendar" element={<h1>Calendar</h1>} />
           <Route path="Inbox" element={<h1>Inbox</h1>} />
           <Route path="Labs" element={<h1>Labs</h1>} />
