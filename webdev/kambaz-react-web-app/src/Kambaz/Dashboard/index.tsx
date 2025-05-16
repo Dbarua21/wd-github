@@ -4,7 +4,7 @@ import {
   Card,
   Col,
   FormControl,
-  Row,
+  Row
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
@@ -41,20 +41,30 @@ export default function Dashboard() {
     <div id="wd-dashboard" className="p-3">
       <h1 id="wd-dashboard-title">Dashboard</h1>
       <h5>New Course</h5>
+
+      {/* Course Name */}
       <FormControl
         className="mb-2"
         value={course.name}
+        placeholder="Course Name"
         onChange={(e) =>
           setCourse({ ...course, name: e.target.value })
         }
       />
+
+      {/* Course Description (Textarea) */}
       <FormControl
-        value={course.description}
+        as="textarea"
         rows={3}
+        className="mb-2"
+        value={course.description}
+        placeholder="Course Description"
         onChange={(e) =>
           setCourse({ ...course, description: e.target.value })
         }
       />
+
+      {/* Buttons */}
       <Button
         className="btn btn-warning float-end me-2"
         id="wd-update-course-click"
@@ -74,6 +84,8 @@ export default function Dashboard() {
       <h2 id="wd-dashboard-published">
         Published Courses ({courses.length})
       </h2>
+
+      {/* Courses Grid */}
       <Row xs={1} sm={2} md={3} lg={4} className="g-4">
         {courses.map((course) => (
           <Col
@@ -97,6 +109,7 @@ export default function Dashboard() {
                   </Card.Text>
                 </Card.Body>
               </Link>
+
               <Button
                 className="btn btn-danger float-end"
                 id="wd-delete-course-click"
