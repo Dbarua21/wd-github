@@ -12,31 +12,29 @@ export default function ManageClass() {
         </ListGroup.Item>
 
         {/* Folders Tab */}
-        <ListGroup.Item
-  as={NavLink}
-  to="Folders"
-  className={({ isActive }: { isActive: boolean }) =>
-    `text-center border-0 ${isActive ? "fw-bold bg-secondary text-white" : ""}`
-  }
->
-  Folders
-</ListGroup.Item>
+        <NavLink
+          to="Folders"
+          className={({ isActive }) =>
+            `list-group-item text-center border-0 ${
+              isActive ? "fw-bold bg-secondary text-white" : ""
+            }`
+          }
+        >
+          Folders
+        </NavLink>
 
-
-
-
-        {/* You can add more tabs here as needed */}
+        {/* more tab suggestions I included below */}
         {/* Example:
-        <ListGroup.Item
-          as={NavLink}
+        <NavLink
           to="Permissions"
           className={({ isActive }) =>
-            "text-center border-0 " +
-            (isActive ? "fw-bold bg-secondary text-white" : "")
+            `list-group-item text-center border-0 ${
+              isActive ? "fw-bold bg-secondary text-white" : ""
+            }`
           }
         >
           Permissions
-        </ListGroup.Item>
+        </NavLink>
         */}
       </ListGroup>
 
@@ -44,7 +42,7 @@ export default function ManageClass() {
       <div className="flex-grow-1 p-3">
         <Routes>
           <Route path="Folders" element={<ManageFolders />} />
-          {/* Add more <Route> definitions here if you add other tabs */}
+          {/* Add more <Route> definitions as needed */}
         </Routes>
       </div>
     </div>
