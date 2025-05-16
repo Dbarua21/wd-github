@@ -1,48 +1,32 @@
-import { useState } from "react";
 import {
   Button,
   Card,
   Col,
   FormControl,
-  Row
+  Row,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
-import db from "../../Database";
 
-export default function Dashboard() {
-  const [courses, setCourses] = useState<any[]>(db.courses);
-  const [course, setCourse] = useState<any>({
-    _id: "0",
-    name: "New Course",
-    number: "New Number",
-    startDate: "2023-09-10",
-    endDate: "2023-12-15",
-    image: "/images/reactjs.jpg",
-    description: "New Description",
-  });
-
-  const addNewCourse = () => {
-    const newCourse = { ...course, _id: uuidv4() };
-    setCourses([...courses, newCourse]);
-  };
-
-  const deleteCourse = (courseId: string) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
-  };
-
-  const updateCourse = () => {
-    setCourses(
-      courses.map((c) => (c._id === course._id ? course : c))
-    );
-  };
-
+export default function Dashboard({
+  courses,
+  course,
+  setCourse,
+  addNewCourse,
+  deleteCourse,
+  updateCourse,
+}: {
+  courses: any[];
+  course: any;
+  setCourse: (course: any) => void;
+  addNewCourse: () => void;
+  deleteCourse: (courseId: string) => void;
+  updateCourse: () => void;
+}) {
   return (
     <div id="wd-dashboard" className="p-3">
       <h1 id="wd-dashboard-title">Dashboard</h1>
       <h5>New Course</h5>
 
-      {/* Course Name */}
       <FormControl
         className="mb-2"
         value={course.name}
@@ -52,7 +36,6 @@ export default function Dashboard() {
         }
       />
 
-      {/* Course Description (Textarea) */}
       <FormControl
         as="textarea"
         rows={3}
@@ -64,7 +47,6 @@ export default function Dashboard() {
         }
       />
 
-      {/* Buttons */}
       <Button
         className="btn btn-warning float-end me-2"
         id="wd-update-course-click"
@@ -85,13 +67,9 @@ export default function Dashboard() {
         Published Courses ({courses.length})
       </h2>
 
-      {/* Courses Grid */}
       <Row xs={1} sm={2} md={3} lg={4} className="g-4">
         {courses.map((course) => (
-          <Col
-            key={course._id}
-            style={{ minWidth: "250px", maxWidth: "270px" }}
-          >
+          <Col key={course._id} style={{ minWidth: "250px", maxWidth: "270px" }}>
             <Card className="h-100">
               <Link
                 to={`/Kambaz/Courses/${course._id}/Home`}
@@ -109,7 +87,6 @@ export default function Dashboard() {
                   </Card.Text>
                 </Card.Body>
               </Link>
-
               <Button
                 className="btn btn-danger float-end"
                 id="wd-delete-course-click"
